@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生日快乐</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>🎉 Happy Birthday! 🎂</h1>
+
+    <div class="scene">
+        <img src="left-character.png" alt="左边的小人" class="character left">
+        
+        <div class="cake-container">
+            <img src="heart.png" alt="大爱心" class="heart">
+            <img src="cake.png" alt="生日蛋糕" class="cake">
+            <button id="play-music">播放音乐 🎵</button>
+        </div>
+
+        <img src="right-character.png" alt="右边的小人" class="character">
+    </div>
+
+    <div class="love-message">
+        <p id="message"></p>
+    </div>
+
+    <audio id="bg-music" src="birthday-song.mp3" loop></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

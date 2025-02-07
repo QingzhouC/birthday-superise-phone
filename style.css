@@ -1,0 +1,106 @@
+body {
+    text-align: center;
+    background: linear-gradient(45deg, #9addff, #fad0c4);
+    font-family: Arial, sans-serif;
+    overflow-y: auto; /* 允许滚动 */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 2px 2px 5px #ff4d4d;
+    margin-top: 20px;
+}
+
+.scene {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.character {
+    width: 100px;
+    height: auto;
+    image-rendering: pixelated;
+}
+
+.left {
+    transform: scaleX(-1);
+}
+
+.cake-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.cake {
+    width: 120px;
+    height: auto;
+    image-rendering: pixelated;
+}
+
+.heart {
+    width: 150px;
+    position: absolute;
+    top: -120px;
+    animation: bounceUpDown 1s ease-in-out infinite;
+}
+
+/* 上下跳动动画 */
+@keyframes bounceUpDown {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+#play-music {
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #ff7f50;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* 文字留言 */
+.love-message {
+    text-align: center;
+    font-size: 16px;
+    color: #ed7db5;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    display: none;
+    max-width: 90%;
+    margin: 20px auto;
+}
+
+#message {
+    display: inline-block;
+    word-wrap: break-word;
+    white-space: normal;
+    padding-right: 5px;
+    border-right: 2px solid;
+    font-size: 16px;
+    line-height: 1.5;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+/* 光标闪烁 */
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+body {
+    min-height: 100vh;
+    overflow-y: auto;
+}
