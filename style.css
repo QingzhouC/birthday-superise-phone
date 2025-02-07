@@ -12,6 +12,8 @@ h1 {
     color: #fff;
     text-shadow: 2px 2px 5px #ff4d4d;
     margin-top: 20px;
+    position: relative;
+    z-index: 10; /* 确保文字在最上层 */
 }
 
 .scene {
@@ -19,12 +21,12 @@ h1 {
     align-items: center;
     justify-content: center;
     gap: 0px;
-    margin-top: 20px;
+    margin-top: 60px; /* 整体往下移动 */
     position: relative;
 }
 
 .character {
-    width: 100px;
+    width: 90px;
     height: auto;
     image-rendering: pixelated;
 }
@@ -41,16 +43,17 @@ h1 {
 }
 
 .cake {
-    width: 120px;
+    width: 100px; /* 稍微变小 */
     height: auto;
     image-rendering: pixelated;
 }
 
 .heart {
-    width: 150px;
+    width: 120px; /* 让爱心变小 */
     position: absolute;
-    top: -120px;
+    top: -90px; /* 适当下移 */
     animation: bounceUpDown 1s ease-in-out infinite;
+    left: -0.5%;
 }
 
 /* 上下跳动动画 */
